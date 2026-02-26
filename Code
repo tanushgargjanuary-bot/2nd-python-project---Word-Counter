@@ -1,0 +1,19 @@
+# Taking input
+sentence = input("Enter word/sentence/string to find number of characters, words and vowels: \n")
+
+# Setting condition to check the input of user if its string or not. And printing Number of Character
+if type(sentence) == str:
+	lchar = len(sentence)
+	print(f"\nNumber of Characters are :{lchar}")
+
+# splitting sentence into words and Printing Number of Words
+	lwords = len(sentence.split())
+	print(f"Number of Word(s) :{lwords}")
+
+# counting vowels and Printing number of vowels in sentence of user's input
+	count = 0
+	vowels = "AEIOUaeiou"
+	for i in sentence:
+		if i in vowels:
+			count += 1
+	print(f"There are {count} vowels")
